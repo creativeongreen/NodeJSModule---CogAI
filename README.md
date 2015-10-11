@@ -12,10 +12,10 @@ var cog_ai      = require('cog-ai')
 
 ## Example
 
-Declaration
+Declaration:
 - var cog_ai      = require('cog-ai')
 
-Setup options for network
+Setup options for network:
 - var options = {
 		layers : [ 2, 2, 1 ],
 		learning_rate : 0.3,
@@ -23,22 +23,23 @@ Setup options for network
 		has_bias : true
 	}
 
-	- Note -
-	layers: define an array for layers:
-	[ number_of_neurons_on_input_layer, 
-	  number_of_neurons_on_hidden_layer, 
-	  number_of_neurons_on_output_layer ]
-	
-	learning_rate: value between 0 ~ 1
-	momentum : value between 0 ~ 1
+		- Note -
+		
+		layers: define an array for layers:
+		[ number_of_neurons_on_input_layer, 
+		  number_of_neurons_on_hidden_layer, 
+		  number_of_neurons_on_output_layer ]
+		
+		learning_rate: value between 0 ~ 1
+		momentum : value between 0 ~ 1
 
-Create a network instant
+Create a network instance:
 - var net = new cog_ai.Backpropagation(options)
 
-To train the network
+To train the network:
 - error = net.train(inputs, outputs)
 
-To evaluate the network
+To evaluate the network:
 - net.eval(inputs)
 
 ### [MIT Licensed](LICENSE)
