@@ -1,0 +1,17 @@
+{
+  "name": "cog_ai",
+  "version": "0.0.1",
+  "description": "Cog neural network & genetic algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "neural",
+    "network",
+    "genetic",
+    "algorithms"
+  ],
+  "author": "creativeongreen",
+  "license": "MIT"
+}
