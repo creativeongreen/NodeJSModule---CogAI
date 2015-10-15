@@ -12,6 +12,15 @@
     "genetic",
     "algorithms"
   ],
-  "author": "creativeongreen",
-  "license": "MIT"
+  "author": {
+    "name": "creativeongreen"
+  },
+  "license": "MIT",
+  "gitHead": "6d2554678f679f41a31fc177089f97a627d23685",
+  "readme": "# CogAI backpropagation neural network & Genetic algorithm\r\n\r\nCreate a backpropagation neural network & genetic algorithm.\r\n\r\nDEMO:\r\n\r\nA. [Neural Network - XOR example](http://nodejs101.herokuapp.com/cog_ai/backpropagation?il=2&hl=2&ol=1&lr=2.5&mt=1&ge=4&bs=true&tf=xor.csv&ef=xor_test.csv)\r\n\r\nB. [Genetic Algorithm - Traveling Salesman Problem](http://nodejs101.herokuapp.com/cog_ai/ga/tsp?pop_size=500&generation=500&cost_file=tsp.csv)\r\n\r\n## Installation\r\n\r\n\t$ npm install cog-ai\r\n\r\n## API\r\n\r\n\tcog_ai = require('cog-ai')\r\n\r\n## Example\r\n\r\nDeclaration:\r\n\r\n\tcog_ai = require('cog-ai')\r\n\r\n### A. Neural Network\r\n\r\nSetup options for neural network:\r\n\r\n\toptions = {\r\n\t\t\tlayers : [ 2, 2, 1 ],\r\n\t\t\tlearning_rate : 0.3,\r\n\t\t\tmomentum : 0.1,\r\n\t\t\thas_bias : true\r\n\t\t}\r\n\r\n\t- Note -\r\n\t\t\r\n\tlayers: define an array for layers:\r\n\t[ number_of_neurons_on_input_layer, \r\n\t  number_of_neurons_on_hidden_layer, \r\n\t  number_of_neurons_on_output_layer ]\r\n\t\t\r\n\tlearning_rate: value between 0 ~ 1\r\n\tmomentum : value between 0 ~ 1\r\n\r\nCreate a network instance:\r\n\r\n\tnet = new cog_ai.Backpropagation(options)\r\n\r\nTo train the network:\r\n\r\n\terror = net.train(inputs, outputs)\r\n\tinputs = [1, 1]\r\n\toutputs = [0]\r\n\r\nTo evaluate the network:\r\n\r\n\tnet.eval(inputs)\r\n\tinputs = [1, 1]\r\n\r\n### B. Genetic Algorithm\r\n\r\nSetup costs matrix for genetic algorithm\r\n\r\n\tCosts = cog_ai.Costs\r\n\tCosts.labels = ['id', 'title', 'price']\r\n\tCosts.matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\r\n\r\nSetup options for genetic algorithm:\r\n\r\n\toptions = {\r\n\t\t\tpopulation_size : 800,\r\n\t\t\tgenerations : 500\r\n\t\t}\r\n\r\nCreate a genetic algorithm instance:\r\n\r\n\tga = new cog_ai.GA(options)\r\n\t// start evolving\r\n\tsolution = ga.evolve()\r\n\t// get best fitness\r\n\tsolution.fitness\r\n\r\n### [MIT Licensed](LICENSE)\r\n",
+  "readmeFilename": "README.md",
+  "_id": "cog_ai@0.0.1",
+  "_shasum": "8569292b6c4a97464fd371cc86dda48fd6496717",
+  "_from": "git+https://github.com/creativeongreen/NodeJSModule-CogAI.git",
+  "_resolved": "git+https://github.com/creativeongreen/NodeJSModule-CogAI.git#6d2554678f679f41a31fc177089f97a627d23685"
 }

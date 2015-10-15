@@ -4,9 +4,9 @@ Create a backpropagation neural network & genetic algorithm.
 
 DEMO:
 
-A. [Neural Network - XOR example](http://nodejs101.herokuapp.com/cog_ai/backpropagation?il=2&hl=2&ol=1&lr=2.5&mt=1&ge=4&bs=true&tf=xor.csv&ef=xor_test.csv)
+A. [Neural Network - XOR example](http://nodejs101.herokuapp.com/cog_ai/backpropagation) (training file: xor.csv, test file: xor_test.csv)
 
-B. [Genetic Algorithm - Traveling Salesman Problem](http://nodejs101.herokuapp.com/cog_ai/ga/tsp?pop_size=500&generation=500&cost_file=tsp.csv)
+B. [Genetic Algorithm - Traveling Salesman Problem](http://nodejs101.herokuapp.com/cog_ai/ga/tsp) (cost file: tsp.csv)
 
 ## Installation
 
