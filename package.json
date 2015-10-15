@@ -1,5 +1,5 @@
 {
-  "name": "cog_ai",
+  "name": "cog-ai",
   "version": "0.0.1",
   "description": "Cog neural network & genetic algorithms",
   "main": "index.js",
